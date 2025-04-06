@@ -4,4 +4,6 @@ config();
 import isPrime from './primeCheck.cjs';
 
 const testNumber = process.env.TEST_NUMBER || 17;
-console.log(`¿Es ${testNumber} primo? ${isPrime(Number(testNumber))}`);
+const responseToPrime = isPrime(Number(testNumber)) ? 'Lo es! :)' : 'No lo es :(';
+
+console.log(`¿Es ${testNumber} primo? ${responseToPrime}`);
