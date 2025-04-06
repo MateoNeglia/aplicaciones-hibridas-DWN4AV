@@ -1,7 +1,7 @@
 import { config } from 'dotenv';
 config();
 
-import isPrime from './primeCheck.js';
+import isPrime from './primeCheck.cjs';
 
 const testNumber = process.env.TEST_NUMBER || 17;
-console.log(`Is ${testNumber} prime? ${isPrime(Number(testNumber))}`);
+console.log(`¿Es ${testNumber} primo? ${isPrime(Number(testNumber))}`);
